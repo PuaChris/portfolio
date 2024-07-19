@@ -9,7 +9,7 @@ export default function Home() {
     <div className="gradient-bg ">
       <NavHeader />
       <div id="about" className="anchor" />
-      <main className="mx-auto z-50 min-h-screen w-full px-6 pb-12 md:px-12 md:pb-20 lg:px-24 lg:pb-10 ">
+      <main className="mx-auto z-50 min-h-screen w-full px-6 pb-12 md:px-12 md:pb-20 lg:px-24 lg:pb-10 xl:px-72 2xl:px-96 min-[1700px]:px-[500px] min-[2000px]:px-[600px]">
         <AboutSection />
         <ExperienceTimeline />
         <ProjectList />

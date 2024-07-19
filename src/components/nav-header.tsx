@@ -27,7 +27,7 @@ const RESUME_LINK = {
 
 export default function NavHeader() {
   return (
-    <header className="sticky top-0 pr-6 md:pr-12 lg:pr-24 backdrop-blur mx-auto w-full h-12 flex flex-col justify-center items-end">
+    <header className="sticky top-0 pr-6 md:pr-12 lg:pr-24 xl:pr-72 2xl:pr-96 min-[1700px]:pr-[500px] min-[2000px]:pr-[600px] backdrop-blur mx-auto w-full h-12 flex flex-col justify-center items-end">
       <NavigationMenu>
         <NavigationMenuList>
           {NAV_LINKS.map((link) => (
