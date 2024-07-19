@@ -10,7 +10,7 @@
     @apply bg-dark text-light;
   }
   h3 {
-    @apply uppercase font-semibold pb-4;
+    @apply uppercase font-semibold pb-4 text-lg;
   }
   p {
     @apply text-justify text-grey;
@@ -18,11 +18,14 @@
 }
 
 @layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-tl from-dark to-dark-light
+  }
   .icons {
     @apply h-7 w-7 py-2 text-grey hover:text-light transition-colors;
   }
   .hyperlink {
-    @apply text-light hover:text-cyan-300 transition-colors;
+    @apply text-light hover:text-teal-300 transition-colors;
   }
   .about-text {
     @apply text-base/7;
@@ -31,9 +34,9 @@
     @apply mb-16 invisible;
   }
   .badges {
-    @apply text-cyan-300 bg-cyan-900;
+    @apply text-teal-300 bg-teal-950;
   }
   .nav-links {
-    @apply uppercase font-semibold text-light hover:text-cyan-300 transition-colors
+    @apply uppercase font-semibold text-light hover:text-teal-300 transition-colors text-sm md:text-lg
   }
 }

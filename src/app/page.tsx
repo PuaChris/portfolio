@@ -6,15 +6,14 @@ import NavHeader from "@/components/nav-header";
 
 export default function Home() {
   return (
-    <>
+    <div className="gradient-bg ">
       <NavHeader />
       <div id="about" className="anchor" />
-      <main className="mx-auto z-50 min-h-screen max-w-screen-xl px-6 pb-12 md:px-12 md:pb-20 lg:px-24 lg:pb-10">
+      <main className="mx-auto z-50 min-h-screen w-full px-6 pb-12 md:px-12 md:pb-20 lg:px-24 lg:pb-10 ">
         <AboutSection />
         <ExperienceTimeline />
         <ProjectList />
       </main>
-      <footer></footer>
-    </>
+    </div>
   );
 }

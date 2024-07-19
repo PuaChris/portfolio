@@ -30,7 +30,7 @@ const PROJECT_LIST = [
     link: "https://github.com/PuaChris/ForeSight",
     description:
       "A mobile app that screens medical skin conditions with 85.68% accuracy from a machine learning R-CNN model hosted on an EC2 instance.",
-    badges: ["Flutter", "Android/iOS", "Python", "AWS", "ML"],
+    badges: ["Flutter", "Android/iOS", "Python", "AWS", "TensorFlow"],
   },
   {
     title: "Domments",
@@ -68,7 +68,7 @@ export default function ProjectList() {
       <div id="projects" className="anchor" />
       <div>
         <h3>Projects</h3>
-        <div>
+        <div className='flex flex-col gap-2'>
           {PROJECT_LIST.map((item) => (
             <div key={item.title} className="mb-6">
               <span className="text-base font-semibold hyperlink flex flex-row items-center gap-2">
@@ -79,7 +79,7 @@ export default function ProjectList() {
                 />
               </span>
               <p className="text-sm/6">{item.description}</p>
-              <div className='flex flex-row gap-2 mt-2'>
+              <div className='flex flex-row flex-wrap gap-2 mt-2'>
                 {item.badges.map((badge) => (
                   <Badge className="badges" key={badge}>
                     {badge}

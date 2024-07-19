@@ -37,17 +37,23 @@ export default function ExperienceTimeline() {
         <h3>Experience</h3>
         <div
           id="experience"
-          className="grid grid-cols-[0.5fr_2fr] gap-x-6 gap-y-8"
+          className="flex flex-col md:grid md:grid-cols-[0.5fr_2fr] md:gap-x-6 md: gap-y-8 mt-8"
         >
           {EXPERIENCE_LIST.map((item) => (
             <>
               <div
                 id="experiences-dates"
-                className="text-sm font-semibold text-grey"
+                className="text-sm font-semibold text-grey min-[0px]:max-md:hidden md:visible"
               >
                 {item.timeline}
               </div>
-              <div>
+              <div className='flex flex-col gap-2'>
+                <span
+                id="experiences-dates"
+                className="text-sm font-semibold text-grey md:hidden"
+                >
+                {item.timeline}
+                </span>
                 <span className="text-base font-semibold hyperlink flex flex-row items-center gap-2">
                   <a href={item.link}>{item.title}</a>
                   <FontAwesomeIcon
@@ -56,7 +62,7 @@ export default function ExperienceTimeline() {
                   />
                 </span>
                 <p className="text-sm/6">{item.description}</p>
-                <div className="flex flex-row gap-2 mt-2">
+                <div className="flex flex-row flex-wrap gap-2 mt-2">
                   {item.badges.map((badge) => (
                     <Badge className="badges" key={badge}>
                       {badge}
