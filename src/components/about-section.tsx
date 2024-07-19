@@ -19,7 +19,7 @@ export default function AboutSection() {
           Front-end Software Engineer | Toronto, ON
         </h2>
         <p className="about-text">
-          Having 3+ years of software development experience and strong
+          Having 4+ years of software development experience and strong
           fundamentals in front-end technologies, I love building scalable web
           infrastructure and making websites fast.
         </p>
@@ -61,7 +61,7 @@ export default function AboutSection() {
         >
           Slalom Build
         </a>{" "}
-        for 2.5 years now where my work varies from building applications from
+        for over 3 years now where my work varies from building applications from
         scratch to enterprise-scale products. I&apos;ve had the privilege of
         working with clients in industries including relocation services,
         healthcare, real-estate, and government. <br /> <br />
