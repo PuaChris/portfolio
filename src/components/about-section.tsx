@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faCheckCircle, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faCheckCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
 
 export default function AboutSection() {
   const copyToClipboard = async () => {
-    await navigator.clipboard.writeText("chrisatpua@gmail.com");
+    await navigator.clipboard.writeText('chrisatpua@gmail.com');
   };
 
   return (
@@ -43,7 +43,7 @@ export default function AboutSection() {
               <FontAwesomeIcon className="icons" icon={faEnvelope} />
             </PopoverTrigger>
             <PopoverContent side="right">
-              Copied!{" "}
+              Copied!{' '}
               <FontAwesomeIcon
                 className="text-green-400"
                 icon={faCheckCircle}
@@ -54,22 +54,25 @@ export default function AboutSection() {
       </div>
       <h3 className="mt-8">About</h3>
       <p className="about-text">
-        I&apos;m currently a full-stack engineer at{" "}
+        I&apos;m currently a full-stack engineer at{' '}
         <a
           className="font-semibold hyperlink"
           href="https://www.slalombuild.com/"
         >
           Slalom Build
-        </a>{" "}
-        for over 3 years now where my work varies from building applications from
-        scratch to enterprise-scale products. I&apos;ve had the privilege of
-        working with clients in industries including relocation services,
+        </a>{' '}
+        for over 3 years now where my work varies from building applications
+        from scratch to enterprise-scale products. I&apos;ve had the privilege
+        of working with clients in industries including relocation services,
         healthcare, real-estate, and government. <br /> <br />
-        Before I started working at Slalom Build, I graduated at University of
-        Toronto in 2021 with a degree in Computer Engineering and an certificate
-        in AI. For my craft, I&apos;m super interested building high-performant
+        Before I started working at Slalom Build, I graduated at{' '}
+        <a className="font-semibold hyperlink" href="https://www.utoronto.ca/">
+          University of Toronto
+        </a>{' '}
+        in 2021 with a degree in Computer Engineering and an certificate in AI.
+        For my craft, I&apos;m super interested building high-performant
         applications with excellent user experiences and working with modern
-        technologies.{" "}
+        technologies.{' '}
       </p>
     </div>
   );
