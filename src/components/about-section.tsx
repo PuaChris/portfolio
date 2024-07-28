@@ -61,9 +61,9 @@ export default function AboutSection() {
         >
           Slalom Build
         </a>{' '}
-        for over 3 years now where my work varies from building applications
-        from scratch to enterprise-scale products. I&apos;ve had the privilege
-        of working with clients in industries including relocation services,
+        for 3+ years now where my work varies from building applications from
+        scratch to enterprise-scale products. I&apos;ve had the privilege of
+        working with clients in industries including relocation services,
         healthcare, real-estate, and government. <br /> <br />
         Before I started working at Slalom Build, I graduated at{' '}
         <a className="font-semibold hyperlink" href="https://www.utoronto.ca/">

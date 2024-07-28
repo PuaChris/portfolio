@@ -72,7 +72,7 @@ export default function ExperienceTimeline() {
                 <ul className="list-disc pl-4">
                   {item.descriptions?.map((desc, index) => (
                     <li key={index} className='pl-4'>
-                      <p className="text-sm/6">{desc}</p>
+                      <p className="text-base/7">{desc}</p>
                     </li>
                   ))}
                 </ul>
